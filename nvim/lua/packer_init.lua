@@ -52,12 +52,12 @@ return packer.startup(function(use)
   use 'lukas-reineke/indent-blankline.nvim'
 
   -- Autopair
-  use {
-    'windwp/nvim-autopairs',
-    config = function()
-      require('nvim-autopairs').setup{}
-    end
-  }
+  --use {
+  --  'windwp/nvim-autopairs',
+  --  config = function()
+  --    require('nvim-autopairs').setup{}
+  --  end
+  --}
 
   -- Icons
   use 'kyazdani42/nvim-web-devicons'
@@ -108,6 +108,8 @@ return packer.startup(function(use)
     'goolord/alpha-nvim',
     requires = { 'kyazdani42/nvim-web-devicons' },
   }
+
+  use 'ziglang/zig.vim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
